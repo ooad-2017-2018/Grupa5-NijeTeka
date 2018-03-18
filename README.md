@@ -29,10 +29,7 @@ Sigurnosni sistem ukljucuje manipulaciju nadzornim kamerama, pri cemu uposlenici
 Restoran se nalazi u sklopu kompleksa bazena. Pristup restoranu ima njegov vlasnik, a radnici imaju mogucnost unosa narudzbi i vodjenja evidencije zaliha.
 
 ### Spa centar
-Koristenje spa centra mora biti unaprijed rezervisano. Spa centar nudi mogucnost masaze, manikira/pedikira i aroma terapije. Duznost uposlenika je samo vodjenje evidencije o potrebnim resursima i usluga pruzenih korisnicima.
-
-### Sauna
-Na ulasku u saunu jedan uposlenik provjerava kartu korisnika kupljenu na portirnici, u svrhu propustanja korisnika u saunu.
+Koristenje spa centra mora biti unaprijed rezervisano. Spa centar nudi mogucnost masaze, manikira/pedikira i aroma terapije, kao i koristenje saune. Duznost uposlenika je samo vodjenje evidencije o potrebnim resursima i usluga pruzenih korisnicima.
 
 ## Funkcionalnosti
 -Mogucnost registracije korisnika
@@ -49,13 +46,12 @@ Na ulasku u saunu jedan uposlenik provjerava kartu korisnika kupljenu na portirn
 Ima uvid u sva desavanja u sistemu i pristup svim podacima
 
 ### Uposlenici
-Dijele se u 6 grupa: odrzavanje sigurnosnog sistema, radnici na blagajni, radnici restorana, radnici spa centra, radnik na ulazu u saunu i spasioci. 
+Dijele se u 5 grupa: odrzavanje sigurnosnog sistema, radnici na blagajni, radnici restorana, radnici spa centra i spasioci. 
 1. grupa: imaju pristup nadzornim kamerama
 2. grupa: imaju pristup fiskalnoj kasi za karte, registraciji/prijavi korisnika, izdavanje peskira/papuca/ormarica
 3. grupa: provjera karte i unos narudzbi, kao i evidencija zaliha
 4. grupa: unos rezervacija korisnika i evidencija zaliha
-5. grupa: provjera validnosti karte korisnika
-6. grupa: nema pristup sistemu, ali su radnici uneseni u sistem radi evidencije
+5. grupa: nema pristup sistemu, ali su radnici uneseni u sistem radi evidencije
 
 ### Korisnici
 Ima mogucnost kupovine registracije (kao stalni clan), kupovine karte uz dodatne usluge (jednodnevna ponuda), kao i odredjene popuste, ukoliko su ispunjeni ranije navedeni uslovi.
