@@ -37,7 +37,8 @@ Uposlenik u spa centru provjerava rezervaciju termina (koji mora biti unaprijed 
 -Mogucnost evidencije inventara spa centra i opreme
 -Evidencija radnika
 
-##Akteri
+## Akteri
+
 ### Uprava
 Ima uvid u sva desavanja u sistemu i pristup svim podacima
 ### Uposlenici
