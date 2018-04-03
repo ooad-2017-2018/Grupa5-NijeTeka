@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="41ddda4d-e9af-43f5-adea-b885f2c2fd5f"
+    Name="257ae84d-fa2b-4305-bda0-8ad37559c206"
     Publisher="CN=Fadil"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="41ddda4d-e9af-43f5-adea-b885f2c2fd5f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="257ae84d-fa2b-4305-bda0-8ad37559c206" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>DelfinBazen</DisplayName>

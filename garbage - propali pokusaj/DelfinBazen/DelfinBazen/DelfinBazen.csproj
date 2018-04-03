@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{D080190E-7BA7-4D84-A465-5D1173DB5E88}</ProjectGuid>
+    <ProjectGuid>{15B3F520-75ED-4402-BAAC-1B5F716DD510}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DelfinBazen</RootNamespace>
@@ -107,10 +107,6 @@
     <None Include="DelfinBazen_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\add_image.png" />
-    <Content Include="Assets\bottlenose-dolphins-jumping-2.jpg" />
-    <Content Include="Assets\Loginpic.jpg" />
-    <Content Include="Assets\Relaxation-feature.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -128,18 +124,6 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="XamlFileovi\LogInForma.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="XamlFileovi\PaketiRezervacijaTermin.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="XamlFileovi\RegistracijaForma.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
