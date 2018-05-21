@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="DelfinBazen.View.RegistracijaGrupeForma"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DelfinBazen.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid HorizontalAlignment="Left" Height="736" Margin="96,120,0,0" VerticalAlignment="Top" Width="980">
+            <TextBlock HorizontalAlignment="Left" Margin="80,76,0,0" Text="Registracija grupe" TextWrapping="Wrap" VerticalAlignment="Top" Height="76" Width="326" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="80,200,0,0" Text="Unesite ime grupe: " TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="306" FontSize="22" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Left" Margin="80,260,0,0" Text="Unesite ime i prezime trenera: " TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="306" FontSize="22" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Left" Margin="80,320,0,0" Text="Unesite broj članova tima: " TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="306" FontSize="22" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Left" Margin="80,372,0,0" Text="Unesite datum osnivanja: " TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="306" FontSize="22" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Left" Margin="80,424,0,0" Text="Unesite korisničko ime: " TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="306" FontSize="22" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Left" Margin="80,476,0,0" Text="Unesite lozinku: " TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="306" FontSize="22" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Left" Margin="80,528,0,0" Text="Potvrdite lozinku: " TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="306" FontSize="22" FontStyle="Italic"/>
+            <TextBox HorizontalAlignment="Left" Margin="446,189,0,0" Text="TextBox" VerticalAlignment="Top" Height="40" Width="388" FontSize="20"/>
+            <TextBox HorizontalAlignment="Left" Margin="446,249,0,0" Text="TextBox" VerticalAlignment="Top" Height="40" Width="388" FontSize="20"/>
+            <TextBox HorizontalAlignment="Left" Margin="446,309,0,0" Text="TextBox" VerticalAlignment="Top" Height="40" Width="388" FontSize="20"/>
+            <TextBox HorizontalAlignment="Left" Margin="446,361,0,0" Text="TextBox" VerticalAlignment="Top" Height="40" Width="388" FontSize="20"/>
+            <TextBox HorizontalAlignment="Left" Margin="446,406,0,0" Text="TextBox" VerticalAlignment="Top" Height="40" Width="388" FontSize="20"/>
+            <TextBox HorizontalAlignment="Left" Margin="446,465,0,0" Text="TextBox" VerticalAlignment="Top" Height="40" Width="388" FontSize="20"/>
+            <TextBox HorizontalAlignment="Left" Margin="446,517,0,0" Text="TextBox" VerticalAlignment="Top" Height="40" Width="388" FontSize="20"/>
+            <Button Content="Registracija" HorizontalAlignment="Left" Margin="669,615,0,0" VerticalAlignment="Top" Height="44" Width="165" FontSize="20"/>
+        </Grid>
+
+    </Grid>
+</Page>

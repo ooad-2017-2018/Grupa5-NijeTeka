@@ -98,7 +98,33 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Bazen.cs" />
+    <Compile Include="Model\KorisniciPojedinci.cs" />
+    <Compile Include="Model\KorisniciTimovi.cs" />
+    <Compile Include="Model\RadnikSpa.cs" />
+    <Compile Include="Model\Recepcionar.cs" />
+    <Compile Include="Model\Uposlenik.cs" />
+    <Compile Include="Model\Upravitelj.cs" />
+    <Compile Include="Model\Zastitar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\DodatneMogucnosti.xaml.cs">
+      <DependentUpon>DodatneMogucnosti.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OdabirPaketaForma.xaml.cs">
+      <DependentUpon>OdabirPaketaForma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pocetna.xaml.cs">
+      <DependentUpon>Pocetna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Prijava.xaml.cs">
+      <DependentUpon>Prijava.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RegistracijaGrupeForma.xaml.cs">
+      <DependentUpon>RegistracijaGrupeForma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RegistracijaPojedincaForma.xaml.cs">
+      <DependentUpon>RegistracijaPojedincaForma.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -129,15 +155,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="XamlFileovi\LogInForma.xaml">
+    <Page Include="View\DodatneMogucnosti.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="XamlFileovi\PaketiRezervacijaTermin.xaml">
+    <Page Include="View\OdabirPaketaForma.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="XamlFileovi\RegistracijaForma.xaml">
+    <Page Include="View\Pocetna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Prijava.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RegistracijaGrupeForma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RegistracijaPojedincaForma.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
