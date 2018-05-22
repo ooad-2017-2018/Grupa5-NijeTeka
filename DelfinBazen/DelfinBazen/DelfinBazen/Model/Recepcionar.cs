@@ -8,6 +8,6 @@ namespace DelfinBazen.Model
 {
     public class Recepcionar : Uposlenik
     {
-        public Recepcionar(string ime, string prezime, DateTime datumRodjenja, double plata) : base(ime, prezime, datumRodjenja, plata) { }
+        public Recepcionar(string ime, string prezime, DateTime datumRodjenja, double plata) : base(ime, prezime, datumRodjenja, plata, "recepcionar", "recepcionar") { }
     }
 }

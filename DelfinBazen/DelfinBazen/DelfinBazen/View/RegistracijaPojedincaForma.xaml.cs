@@ -47,8 +47,8 @@ namespace DelfinBazen.View
             DateTime datum = Convert.ToDateTime(cal.Date);
             string JMB = JMBroj.Text;
             string imekorisnicko = Korisnicko.Text;
-            string lozinkaprva = Lozinka1.Text;
-            string lozinkadruga = Lozinka2.Text;
+            string lozinkaprva = Lozinka1.Password.ToString();
+            string lozinkadruga = Lozinka2.Password.ToString();
             if (Validiraj(ime, prezime, datum, JMB, imekorisnicko, lozinkaprva, lozinkadruga))
             {
                 KorisniciPojedinci kp = new KorisniciPojedinci(ime, prezime, JMB, datum, imekorisnicko, lozinkadruga);

@@ -12,12 +12,12 @@
             <TextBlock HorizontalAlignment="Left" Margin="44,46,0,0" Text="Prijava" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" Height="64" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
             <TextBlock HorizontalAlignment="Left" Margin="44,136,0,0" Text="Korisničko ime: " TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="166" FontSize="22" FontStyle="Italic"/>
             <TextBlock HorizontalAlignment="Left" Margin="44,212,0,0" Text="Lozinka: " TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="166" FontSize="22" FontStyle="Italic"/>
-            <TextBox x:Name="Ime" HorizontalAlignment="Left" Margin="240,133,0,0" Text="TextBox" VerticalAlignment="Top" Height="52" Width="234" FontSize="20"/>
-            <TextBox x:Name="Lozinka" HorizontalAlignment="Left" Margin="240,209,0,0" Text="TextBox" VerticalAlignment="Top" Height="52" Width="234" FontSize="20"/>
-            <Button Content="Registracija pojedinca" HorizontalAlignment="Left" Margin="76,288,0,0" VerticalAlignment="Top" Height="66" Width="197" FontSize="18"/>
-            <Button Content="Registracija grupe(tima)" HorizontalAlignment="Left" Margin="334,288,0,0" VerticalAlignment="Top" Height="66" Width="243" FontSize="18"/>
+            <TextBox x:Name="Ime" HorizontalAlignment="Left" Margin="240,133,0,0" Text="" VerticalAlignment="Top" Height="52" Width="234" FontSize="20"/>
+            <Button Content="Registracija pojedinca" HorizontalAlignment="Left" Margin="76,288,0,0" VerticalAlignment="Top" Height="66" Width="197" FontSize="18" Click="Button_Click_1"/>
+            <Button Content="Registracija grupe(tima)" HorizontalAlignment="Left" Margin="334,288,0,0" VerticalAlignment="Top" Height="66" Width="243" FontSize="18" Click="Button_Click_2"/>
             <Button Content="Prijava" HorizontalAlignment="Left" Margin="620,288,0,0" VerticalAlignment="Top" Height="66" Width="125" FontSize="18" Click="Button_Click"/>
             <ContentControl x:Name="Greska" Content="" HorizontalAlignment="Left" Margin="504,112,0,0" VerticalAlignment="Top" Height="149" Width="273" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            <PasswordBox x:Name="Lozinka" HorizontalAlignment="Left" Margin="240,212,0,0" VerticalAlignment="Top" Width="234" Height="49"/>
         </Grid>
         <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="2112,336,-732,0" VerticalAlignment="Top"/>
 

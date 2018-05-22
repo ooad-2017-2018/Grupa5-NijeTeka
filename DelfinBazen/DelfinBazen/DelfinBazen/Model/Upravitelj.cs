@@ -8,6 +8,6 @@ namespace DelfinBazen.Model
 {
     public class Upravitelj : Uposlenik
     {
-        public Upravitelj(string ime, string prezime, DateTime datumRodjenja, double plata) : base(ime, prezime, datumRodjenja, plata) { }
+        public Upravitelj(string ime, string prezime, DateTime datumRodjenja, double plata) : base(ime, prezime, datumRodjenja, plata, "uprvitelj", "upravitelj") { }
     }
 }

@@ -8,6 +8,6 @@ namespace DelfinBazen.Model
 {
     public class RadnikSpa: Uposlenik
     {
-        public RadnikSpa(string ime, string prezime, DateTime datumRodjenja, double plata) : base(ime, prezime, datumRodjenja, plata) { }
+        public RadnikSpa(string ime, string prezime, DateTime datumRodjenja, double plata) : base(ime, prezime, datumRodjenja, plata, "spacentar", "spacentar") { }
     }
 }

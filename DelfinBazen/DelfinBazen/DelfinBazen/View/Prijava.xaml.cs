@@ -39,7 +39,7 @@ namespace DelfinBazen.View
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string ime = Ime.Text;
-            string lozinka = Lozinka.Text;
+            string lozinka = Lozinka.Password.ToString();
             foreach(KorisniciPojedinci kp in b.KorisniciPojedinci)
             {
                 if(ime==kp.KorisnickoIme && lozinka == kp.Lozinka)
@@ -49,6 +49,18 @@ namespace DelfinBazen.View
                 }
             }
             Greska.Content = "Neispravni podaci! Ako niste registrovani, molimo vas da se registrujete!";
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Page registracija = new RegistracijaPojedincaForma();
+            this.Content = registracija;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Page registracija2 = new RegistracijaGrupeForma();
+            this.Content = registracija2;
         }
     }
 }
