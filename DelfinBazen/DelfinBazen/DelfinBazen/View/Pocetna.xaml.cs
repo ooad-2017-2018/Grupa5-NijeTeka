@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DelfinBazen.Model;
+using DelfinBazen.View;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +24,41 @@ namespace DelfinBazen.XamlFileovi
     /// </summary>
     public sealed partial class Pocetna : Page
     {
+        Bazen b;
         public Pocetna()
         {
             this.InitializeComponent();
+            b = new Bazen();
+        }
+        public Pocetna(ref Bazen bazen)
+        {
+            this.InitializeComponent();
+            b = new Bazen();
+            b = bazen;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Page stranica = new Prijava(ref b);
+            this.Content = stranica;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Page prijava1 = new RegistracijaPojedincaForma(ref b);
+            this.Content = prijava1;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Page prijava2 = new RegistracijaGrupeForma(ref b);
+            this.Content = prijava2;
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Page stranica = new Prijava(ref b);
+            this.Content = stranica;
         }
     }
 }

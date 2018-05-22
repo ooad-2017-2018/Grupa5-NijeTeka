@@ -8,11 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid HorizontalAlignment="Left" Height="590" Margin="139,148,0,0" VerticalAlignment="Top" Width="684" Background="#FF00AEFF">
+        <Grid HorizontalAlignment="Left" Height="642" Margin="50,50,0,0" VerticalAlignment="Top" Width="800" Background="#FF00AEFF">
             <TextBlock HorizontalAlignment="Left" Margin="148,90,0,0" Text="Dobrodošli!" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="334" FontSize="36" FontWeight="Bold" FontStyle="Italic"/>
-            <Button Content="Prijavite se i odaberite svoju dnevnu ponudu!" HorizontalAlignment="Left" Margin="148,188,0,0" VerticalAlignment="Top" Height="64" Width="461" Background="White" FontSize="20"/>
-            <Button Content="Registrujte se!" HorizontalAlignment="Left" Margin="148,296,0,0" VerticalAlignment="Top" Height="64" Width="461" Background="White" FontSize="20"/>
-            <Button Content="Prijavite se i odaberite dodatne mogućnosti!" HorizontalAlignment="Left" Margin="148,412,0,0" VerticalAlignment="Top" Height="64" Width="461" Background="White" FontSize="20"/>
+            <Button Content="Prijavite se i odaberite svoju dnevnu ponudu!" HorizontalAlignment="Left" Margin="148,164,0,0" VerticalAlignment="Top" Height="64" Width="461" Background="White" FontSize="20" Click="Button_Click"/>
+            <Button Content="Registrujte se (pojedinacna prijava)!" HorizontalAlignment="Left" Margin="148,252,0,0" VerticalAlignment="Top" Height="64" Width="461" Background="White" FontSize="20" Click="Button_Click_1"/>
+            <Button Content="Prijavite se i odaberite dodatne mogućnosti!" HorizontalAlignment="Left" Margin="148,436,0,0" VerticalAlignment="Top" Height="64" Width="461" Background="White" FontSize="20" Click="Button_Click_3"/>
+            <Button Content="Registrujte se (timska prijava)!" HorizontalAlignment="Left" Margin="148,343,0,0" VerticalAlignment="Top" Height="64" Width="461" Background="White" FontSize="20" Click="Button_Click_2"/>
         </Grid>
 
     </Grid>

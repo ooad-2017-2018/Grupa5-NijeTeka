@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DelfinBazen.XamlFileovi;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,8 @@ namespace DelfinBazen
         public MainPage()
         {
             this.InitializeComponent();
+            Page pocetna = new Pocetna();
+            this.Content = pocetna;
         }
     }
 }

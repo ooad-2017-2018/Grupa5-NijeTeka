@@ -101,8 +101,10 @@
     <Compile Include="Model\Bazen.cs" />
     <Compile Include="Model\KorisniciPojedinci.cs" />
     <Compile Include="Model\KorisniciTimovi.cs" />
+    <Compile Include="Model\Paket.cs" />
     <Compile Include="Model\RadnikSpa.cs" />
     <Compile Include="Model\Recepcionar.cs" />
+    <Compile Include="Model\Termin.cs" />
     <Compile Include="Model\Uposlenik.cs" />
     <Compile Include="Model\Upravitelj.cs" />
     <Compile Include="Model\Zastitar.cs" />

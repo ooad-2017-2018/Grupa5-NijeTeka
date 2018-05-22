@@ -8,24 +8,27 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid HorizontalAlignment="Left" Height="676" Margin="76,148,0,0" VerticalAlignment="Top" Width="1108">
+        <Grid HorizontalAlignment="Left" Height="676" Margin="50,50,0,0" VerticalAlignment="Top" Width="1108">
             <TextBlock HorizontalAlignment="Left" Margin="76,68,0,0" Text="Registracija pojedinca" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="426" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
             <TextBlock HorizontalAlignment="Left" Margin="76,153,0,0" Text="Unesite ime: " TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="266" FontSize="22" FontStyle="Italic"/>
             <TextBlock HorizontalAlignment="Left" Margin="76,211,0,0" Text="Unesite prezime: " TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="266" FontSize="22" FontStyle="Italic"/>
             <TextBlock HorizontalAlignment="Left" Margin="76,265,0,0" Text="Unesite datum rođenja: " TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="266" FontSize="22" FontStyle="Italic"/>
-            <TextBlock HorizontalAlignment="Left" Margin="76,336,0,0" Text="Unesite JMB: " TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="266" FontSize="22" FontStyle="Italic"/>
-            <TextBlock HorizontalAlignment="Left" Margin="79,389,0,0" Text="Unesite korisničko ime: " TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="266" FontSize="22" FontStyle="Italic"/>
-            <TextBlock HorizontalAlignment="Left" Margin="76,443,0,0" Text="Unesite lozinku: " TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="266" FontSize="22" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Left" Margin="73,317,0,0" Text="Unesite JMB: " TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="266" FontSize="22" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Left" Margin="76,370,0,0" Text="Unesite korisničko ime: " TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="266" FontSize="22" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Left" Margin="76,424,0,0" Text="Unesite lozinku: " TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="266" FontSize="22" FontStyle="Italic"/>
             <TextBlock HorizontalAlignment="Left" Margin="76,495,0,0" Text="Ponovite lozinku: " TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="266" FontSize="22" FontStyle="Italic"/>
-            <TextBox HorizontalAlignment="Left" Margin="410,134,0,0" Text="TextBox" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
-            <TextBox HorizontalAlignment="Left" Margin="410,192,0,0" Text="TextBox" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
-            <TextBox HorizontalAlignment="Left" Margin="410,246,0,0" Text="TextBox" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
-            <TextBox HorizontalAlignment="Left" Margin="410,317,0,0" Text="TextBox" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
-            <TextBox HorizontalAlignment="Left" Margin="410,370,0,0" Text="TextBox" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
-            <TextBox HorizontalAlignment="Left" Margin="410,424,0,0" Text="TextBox" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
-            <TextBox HorizontalAlignment="Left" Margin="410,495,0,0" Text="TextBox" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
-            <Button Content="Registracija" HorizontalAlignment="Left" Margin="748,582,0,0" VerticalAlignment="Top" Height="40" Width="195" FontSize="20"/>
+            <TextBox x:Name="Ime" HorizontalAlignment="Left" Margin="410,134,0,0" Text="" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
+            <TextBox x:Name="Prezime" HorizontalAlignment="Left" Margin="410,192,0,0" Text="" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
+            <TextBox x:Name="JMBroj" HorizontalAlignment="Left" Margin="410,317,0,0" Text="" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
+            <TextBox x:Name="Korisnicko" HorizontalAlignment="Left" Margin="410,370,0,0" Text="" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
+            <TextBox x:Name="Lozinka1" HorizontalAlignment="Left" Margin="410,424,0,0" Text="" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
+            <TextBox x:Name="Lozinka2" HorizontalAlignment="Left" Margin="410,495,0,0" Text="" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
+            <Button Content="Registracija" HorizontalAlignment="Left" Margin="748,582,0,0" VerticalAlignment="Top" Height="40" Width="195" FontSize="20" Click="Button_Click"/>
+            <DatePicker x:Name="DatumRodjenja" HorizontalAlignment="Left" Margin="410,252,0,0" VerticalAlignment="Top" Height="65" Width="364" FontSize="22"/>
+            <ContentControl x:Name="PrijavaGreski" Content="" HorizontalAlignment="Left" Margin="73,582,0,0" VerticalAlignment="Top" Height="40" Width="670" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            <CalendarDatePicker x:Name="cal" HorizontalAlignment="Left" Margin="398,258,0,0" VerticalAlignment="Top" Height="59" Width="376"/>
         </Grid>
+        <FlipView HorizontalAlignment="Left" Margin="1422,518,-22,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Page>
