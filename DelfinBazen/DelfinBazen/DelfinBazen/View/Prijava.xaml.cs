@@ -38,17 +38,33 @@ namespace DelfinBazen.View
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Upravitelj u = new Upravitelj("Senad", "Senci", Convert.ToDateTime("12.02.1990."), 152.2);
+            b.Uposlenici.Add(u);
             string ime = Ime.Text;
             string lozinka = Lozinka.Password.ToString();
+            bool var = false;
             foreach(KorisniciPojedinci kp in b.KorisniciPojedinci)
             {
                 if(ime==kp.KorisnickoIme && lozinka == kp.Lozinka)
                 {
+                    var = true;
                     Page paketi = new OdabirPaketaForma();
                     this.Content = paketi;
                 }
             }
-            Greska.Content = "Neispravni podaci! Ako niste registrovani, molimo vas da se registrujete!";
+            foreach (KorisniciTimovi kt in b.KorisniciTimovi)
+            {
+                if (ime == kt.KorisnickoIme && lozinka == kt.Lozinka)
+                {
+                    var = true;
+                    Page paketi = new RezervacijaTim();
+                    this.Content = paketi;
+                }
+            }
+            if (var == false)
+            {
+                Greska.Content = "Neispravni podaci! Ako niste registrovani, molimo vas da se registrujete!";
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -61,6 +77,12 @@ namespace DelfinBazen.View
         {
             Page registracija2 = new RegistracijaGrupeForma();
             this.Content = registracija2;
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Page nazad = new Pocetna();
+            this.Content = nazad;
         }
     }
 }

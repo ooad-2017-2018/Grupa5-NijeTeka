@@ -11,13 +11,6 @@
         <Grid HorizontalAlignment="Left" Height="673" Margin="50,46,0,0" VerticalAlignment="Top" Width="1104">
             <TextBlock HorizontalAlignment="Left" Margin="10,28,-16,0" Text="Odabir paketa" TextWrapping="Wrap" VerticalAlignment="Top" Height="64" Width="576" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
             <TextBlock HorizontalAlignment="Left" Margin="14,90,0,0" Text="Odaberite željeni paket: " TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="350" FontSize="20" FontStyle="Italic"/>
-            <RadioButton x:Name="Paket1" Content="Paket1 (Korištenje bazena)- Cijena 10KM" HorizontalAlignment="Left" Margin="14,140,0,0" VerticalAlignment="Top" Height="52" Width="414" FontSize="20" FontStyle="Italic"/>
-            <RadioButton x:Name="Paket2" Content="Paket2 (Korištenje bazena i spa centra)- Cijena 20KM" HorizontalAlignment="Left" Margin="14,197,0,0" VerticalAlignment="Top" Height="52" Width="494" FontSize="20" FontStyle="Italic"/>
-            <RadioButton x:Name="Paket3" Content="Paket3 (Korištenje bazena i spa centra+masaža)" HorizontalAlignment="Left" Margin="14,254,0,0" VerticalAlignment="Top" Height="52" Width="466" FontSize="20" FontStyle="Italic"/>
-            <RadioButton x:Name="Masaza1" Content="Švedska masaža (Cijena paketa 35KM)" HorizontalAlignment="Left" Margin="60,306,0,0" VerticalAlignment="Top" FontSize="18"/>
-            <RadioButton x:Name="Masaza3" Content="Tai masaža (Cijena paketa 60KM)" HorizontalAlignment="Left" Margin="60,375,0,0" VerticalAlignment="Top" FontSize="18"/>
-            <RadioButton x:Name="Masaza4" Content="Aromaterapijska masaža (Cijena paketa 50KM)" HorizontalAlignment="Left" Margin="60,407,0,-32" VerticalAlignment="Top" FontSize="18"/>
-            <RadioButton x:Name="Masaza2" Content="Sportska masaža (Cijena paketa 40KM)" HorizontalAlignment="Left" Margin="60,338,0,0" VerticalAlignment="Top" FontSize="18"/>
             <CheckBox x:Name="Papuce" Content="Papuče 2KM" HorizontalAlignment="Left" Margin="612,142,0,0" VerticalAlignment="Top" FontSize="20" FontStyle="Italic"/>
             <CheckBox x:Name="Peskir" Content="Peškir 3KM" HorizontalAlignment="Left" Margin="612,199,0,0" VerticalAlignment="Top" FontSize="20" FontStyle="Italic"/>
             <CheckBox x:Name="Ormaric" Content="Ormarić 5KM" HorizontalAlignment="Left" Margin="612,256,0,0" VerticalAlignment="Top" FontSize="20" FontStyle="Italic"/>
@@ -27,9 +20,16 @@
             <RadioButton x:Name="Dnevna" Content="Dnevna (12:00 - 18:00)" HorizontalAlignment="Left" Margin="818,179,0,0" VerticalAlignment="Top" FontSize="18"/>
             <RadioButton x:Name="Nocna" Content="Noćna (18:00 - 22:00)" HorizontalAlignment="Left" Margin="818,216,0,0" VerticalAlignment="Top" FontSize="18"/>
             <TextBlock HorizontalAlignment="Left" Margin="602,342,0,0" Text="Odaberite željeni termin: " TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="250" FontSize="20" FontStyle="Italic"/>
-            <DatePicker x:Name="Termin" HorizontalAlignment="Left" Margin="602,386,0,0" VerticalAlignment="Top" FontSize="18"/>
             <Button Content="Rezerviši i plati" HorizontalAlignment="Left" Margin="704,482,0,0" VerticalAlignment="Top" FontSize="20" Click="Button_Click"/>
             <ContentControl x:Name="Greska" Content="" HorizontalAlignment="Left" Margin="42,482,0,0" VerticalAlignment="Top" Height="54" Width="545" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            <CalendarDatePicker x:Name="Termin1" HorizontalAlignment="Left" Margin="602,395,0,0" VerticalAlignment="Top" Height="44" Width="253"/>
+            <CheckBox x:Name="Paket1" Content="Paket1 (Korištenje bazena)- Cijena 10KM" HorizontalAlignment="Left" Margin="14,141,0,0" VerticalAlignment="Top" Height="45" Width="494" FontSize="20" FontStyle="Italic"/>
+            <CheckBox x:Name="Paket2" Content="Paket2 (Korištenje bazena i spa centra)- Cijena 20KM" HorizontalAlignment="Left" Margin="14,196,0,0" VerticalAlignment="Top" Height="45" Width="494" FontSize="20" FontStyle="Italic"/>
+            <CheckBox x:Name="Paket3" Content="Paket3 (Korištenje bazena i spa centra+masaža)" HorizontalAlignment="Left" Margin="14,246,0,0" VerticalAlignment="Top" Height="45" Width="494" FontSize="20" FontStyle="Italic"/>
+            <CheckBox x:Name="Masaza1" Content="Švedska masaža (Cijena paketa 35KM)" HorizontalAlignment="Left" Margin="60,296,0,0" VerticalAlignment="Top" Width="425" FontSize="20" FontStyle="Italic"/>
+            <CheckBox x:Name="Masaza3" Content="Tai masaža (Cijena paketa 60KM)" HorizontalAlignment="Left" Margin="60,375,0,0" VerticalAlignment="Top" Width="425" FontSize="20" FontStyle="Italic"/>
+            <CheckBox x:Name="Masaza2" Content="Sportska masaža (Cijena paketa 40KM)" HorizontalAlignment="Left" Margin="60,337,0,0" VerticalAlignment="Top" Width="425" FontSize="20" FontStyle="Italic"/>
+            <CheckBox x:Name="Masaza4" Content="Aromaterapijska masaža (Cijena paketa 50KM)" HorizontalAlignment="Left" Margin="60,412,0,0" VerticalAlignment="Top" Width="425" FontSize="20" FontStyle="Italic"/>
         </Grid>
 
     </Grid>

@@ -1,4 +1,5 @@
 ﻿using DelfinBazen.Model;
+using DelfinBazen.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,6 +7,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -40,19 +42,19 @@ namespace DelfinBazen.XamlFileovi
         {
             string vrsta="";
             int cijena = 0;
-            DateTime datum = Convert.ToDateTime(Termin);
+            DateTime datum = Termin1.Date.Value.Date;
             Termin termin = new Termin(datum);
             if (Paket1.IsChecked == true)
             {
                 vrsta = Convert.ToString(Paket1);
                 cijena += 10;
             }
-            else if (Paket2.IsChecked == true)
+            if (Paket2.IsChecked == true)
             {
                 vrsta = Convert.ToString(Paket2);
                 cijena += 20;
             }
-            else if (Paket3.IsChecked == true)
+            if (Paket3.IsChecked == true)
             {
                 vrsta = Convert.ToString(Paket3);
                 if (Masaza1.IsChecked == true) cijena += 35;
@@ -64,16 +66,29 @@ namespace DelfinBazen.XamlFileovi
             if (Papuce.IsChecked == true) cijena += 2;
             if (Peskir.IsChecked == true) cijena += 3;
             if (Ormaric.IsChecked == true) cijena += 5;
+            bool v = true;
             foreach(Termin t in b.Termini)
             {
-                if (t == termin) Greska.Content = "Termin je popunjen";
+                if (t == termin)
+                {
+                    Greska.Content = "Termin je popunjen";
+                    v = false;
+                }
+                
                 
             }
-            Greska.Content = "Uspjesno ste rezervisali uslugu!";
-            b.Paketi.Add(new Paket(vrsta, cijena));
-            Page Pocetna = new Pocetna(ref b);
-            this.Content = Pocetna;
-
+            if (v == true)
+            {
+                b.Termini.Add(termin);
+                KorisnikViewModel kwm = new KorisnikViewModel();
+                Paket p = kwm.odabirPaketa(vrsta, cijena);
+                var dialog = new MessageDialog("Uspjesno ste rezervisali uslugu! \n Ukupno za platiti pri dolasku imate: " + cijena);
+                dialog.ShowAsync();
+                b.Paketi.Add(p);
+                Page Pocetna = new Pocetna(ref b);
+                this.Content = Pocetna;
+            }
         }
+
     }
 }

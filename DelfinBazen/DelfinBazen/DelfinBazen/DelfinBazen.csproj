@@ -109,14 +109,23 @@
     <Compile Include="Model\Upravitelj.cs" />
     <Compile Include="Model\Zastitar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\KorisnikViewModel.cs" />
+    <Compile Include="ViewModel\TimoviViewModel.cs" />
+    <Compile Include="ViewModel\UpraviteljViewModel.cs" />
     <Compile Include="View\DodatneMogucnosti.xaml.cs">
       <DependentUpon>DodatneMogucnosti.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DodavanjeUposlenika.xaml.cs">
+      <DependentUpon>DodavanjeUposlenika.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\OdabirPaketaForma.xaml.cs">
       <DependentUpon>OdabirPaketaForma.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Pocetna.xaml.cs">
       <DependentUpon>Pocetna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PregledEvidencije.xaml.cs">
+      <DependentUpon>PregledEvidencije.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Prijava.xaml.cs">
       <DependentUpon>Prijava.xaml</DependentUpon>
@@ -126,6 +135,12 @@
     </Compile>
     <Compile Include="View\RegistracijaPojedincaForma.xaml.cs">
       <DependentUpon>RegistracijaPojedincaForma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RezervacijaTim.xaml.cs">
+      <DependentUpon>RezervacijaTim.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UpravaForma.xaml.cs">
+      <DependentUpon>UpravaForma.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -161,11 +176,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\DodavanjeUposlenika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\OdabirPaketaForma.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Pocetna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PregledEvidencije.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -178,6 +201,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\RegistracijaPojedincaForma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RezervacijaTim.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UpravaForma.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

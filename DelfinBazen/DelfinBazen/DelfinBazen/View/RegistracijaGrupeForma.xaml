@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid HorizontalAlignment="Left" Height="736" Margin="54,46,0,0" VerticalAlignment="Top" Width="980">
+        <Grid HorizontalAlignment="Left" Height="736" Margin="54,46,0,0" VerticalAlignment="Top" Width="1145">
             <TextBlock HorizontalAlignment="Left" Margin="80,76,0,0" Text="Registracija grupe" TextWrapping="Wrap" VerticalAlignment="Top" Height="76" Width="326" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
             <TextBlock HorizontalAlignment="Left" Margin="80,200,0,0" Text="Unesite ime grupe: " TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="306" FontSize="22" FontStyle="Italic"/>
             <TextBlock HorizontalAlignment="Left" Margin="80,260,0,0" Text="Unesite ime i prezime trenera: " TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="306" FontSize="22" FontStyle="Italic"/>
@@ -21,11 +21,12 @@
             <TextBox x:Name="Trener" HorizontalAlignment="Left" Margin="446,249,0,0" Text="" VerticalAlignment="Top" Height="40" Width="388" FontSize="20"/>
             <TextBox x:Name="BrojClanova" HorizontalAlignment="Left" Margin="446,309,0,0" Text="" VerticalAlignment="Top" Height="40" Width="388" FontSize="20"/>
             <TextBox x:Name="Korisnicko" HorizontalAlignment="Left" Margin="446,406,0,0" Text="" VerticalAlignment="Top" Height="40" Width="388" FontSize="20"/>
-            <TextBox x:Name="Lozinka1" HorizontalAlignment="Left" Margin="446,465,0,0" Text="" VerticalAlignment="Top" Height="40" Width="388" FontSize="20"/>
-            <TextBox x:Name="Lozinka2" HorizontalAlignment="Left" Margin="446,517,0,0" Text="" VerticalAlignment="Top" Height="40" Width="388" FontSize="20"/>
             <Button Content="Registracija" HorizontalAlignment="Left" Margin="669,615,0,0" VerticalAlignment="Top" Height="44" Width="165" FontSize="20" Click="Button_Click"/>
-            <ContentControl x:Name="Greske" Content="" HorizontalAlignment="Left" Margin="80,599,0,0" VerticalAlignment="Top" Height="102" Width="584" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
-            <DatePicker x:Name="DatumOsnivanja" HorizontalAlignment="Left" Margin="446,354,0,0" VerticalAlignment="Top" Width="388" Height="52" FontSize="22"/>
+            <ContentControl x:Name="Greske" Content="" HorizontalAlignment="Left" Margin="80,599,0,0" VerticalAlignment="Top" Height="60" Width="584" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            <CalendarDatePicker x:Name="DatumOsnivanja" HorizontalAlignment="Left" Margin="446,365,0,0" VerticalAlignment="Top" Height="34" Width="388"/>
+            <Button Content="Nazad" HorizontalAlignment="Left" Margin="875,615,0,0" VerticalAlignment="Top" Height="44" Width="158" FontSize="20" Click="Button_Click_1"/>
+            <PasswordBox x:Name="Lozinka1" HorizontalAlignment="Left" Margin="446,454,0,0" VerticalAlignment="Top" Height="51" Width="388" FontSize="20"/>
+            <PasswordBox x:Name="Lozinka2" HorizontalAlignment="Left" Margin="446,517,0,0" VerticalAlignment="Top" Height="51" Width="388" FontSize="20"/>
         </Grid>
 
     </Grid>

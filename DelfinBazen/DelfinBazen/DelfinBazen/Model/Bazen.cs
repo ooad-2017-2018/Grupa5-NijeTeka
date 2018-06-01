@@ -18,7 +18,8 @@ namespace DelfinBazen.Model
         public List<Uposlenik> Uposlenici { get => uposlenici; set => uposlenici = value; }
         public List<Paket> Paketi { get => paketi; set => paketi = value; }
         public List<Termin> Termini { get => termini; set => termini = value; }
-
+        
+        
         private void dodajKorisnika(KorisniciPojedinci k)
         {
             korisniciPojedinci.Add(k);

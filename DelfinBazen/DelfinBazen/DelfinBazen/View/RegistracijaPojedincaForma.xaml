@@ -22,10 +22,11 @@
             <TextBox x:Name="JMBroj" HorizontalAlignment="Left" Margin="410,317,0,0" Text="" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
             <TextBox x:Name="Korisnicko" HorizontalAlignment="Left" Margin="410,370,0,0" Text="" VerticalAlignment="Top" Height="48" Width="364" FontSize="22"/>
             <Button Content="Registracija" HorizontalAlignment="Left" Margin="748,582,0,0" VerticalAlignment="Top" Height="40" Width="195" FontSize="20" Click="Button_Click"/>
-            <ContentControl x:Name="PrijavaGreski" Content="" HorizontalAlignment="Left" Margin="73,582,0,0" VerticalAlignment="Top" Height="40" Width="670" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            <ContentControl x:Name="PrijavaGreski" HorizontalAlignment="Left" Margin="73,582,0,0" VerticalAlignment="Top" Height="40" Width="670" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
             <CalendarDatePicker x:Name="cal" HorizontalAlignment="Left" Margin="410,253,0,0" VerticalAlignment="Top" Height="41" Width="376"/>
             <PasswordBox x:Name="Lozinka1" HorizontalAlignment="Left" Margin="410,424,0,0" VerticalAlignment="Top" Width="364" Height="52"/>
             <PasswordBox x:Name="Lozinka2" HorizontalAlignment="Left" Margin="410,495,0,0" VerticalAlignment="Top" Width="364" Height="52"/>
+            <Button Content="Nazad" HorizontalAlignment="Left" Margin="955,582,0,0" VerticalAlignment="Top" Height="40" Width="126" FontSize="18" Click="Button_Click_1"/>
         </Grid>
         <FlipView HorizontalAlignment="Left" Margin="1422,518,-22,0" VerticalAlignment="Top" Width="100"/>
 

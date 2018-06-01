@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Navigation;
 using DelfinBazen.Model;
 using System.Text.RegularExpressions;
 using DelfinBazen.XamlFileovi;
+using Windows.UI.Popups;
+using DelfinBazen.ViewModel;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -70,19 +72,31 @@ namespace DelfinBazen.View
         {
             string ime = Ime.Text;
             string trener = Trener.Text;
-            DateTime datum = Convert.ToDateTime(DatumOsnivanja);
+            DateTime datum = DatumOsnivanja.Date.Value.Date;
             int brojCl = Convert.ToInt32(BrojClanova.Text);
             string imekorisnicko = Korisnicko.Text;
-            string lozinkaprva = Lozinka1.Text;
-            string lozinkadruga = Lozinka2.Text;
-            while(Validiraj(ime, trener,brojCl, imekorisnicko, lozinkaprva, lozinkadruga)==false)
+            string lozinkaprva = Lozinka1.Password.ToString();
+            string lozinkadruga = Lozinka2.Password.ToString();
+            if (!Validiraj(ime, trener, brojCl, imekorisnicko, lozinkaprva, lozinkadruga))
             {
-                Greske.Content += "Molimo ispravite podatke!";
+                Greske.Content += "Molimo ispravite greske!";
             }
-            KorisniciTimovi kt = new KorisniciTimovi(ime, trener, brojCl, datum, imekorisnicko, lozinkadruga);
-            b.KorisniciTimovi.Add(kt);
-            Page page = new OdabirPaketaForma(ref b);
-            this.Content = page;
+            else
+            {
+                TimoviViewModel tvm = new TimoviViewModel();
+                KorisniciTimovi kt = tvm.rezervisi(ime, trener, brojCl, imekorisnicko, lozinkaprva);
+                b.KorisniciTimovi.Add(kt);
+                var dialog = new MessageDialog("Uspješno ste registrovani!");
+                dialog.ShowAsync();
+                Page page = new Pocetna(ref b);
+                this.Content = page;
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Page nazad = new Pocetna();
+            this.Content = nazad;
         }
     }
 }

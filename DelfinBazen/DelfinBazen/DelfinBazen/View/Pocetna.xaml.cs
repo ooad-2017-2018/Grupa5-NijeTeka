@@ -25,6 +25,7 @@ namespace DelfinBazen.XamlFileovi
     public sealed partial class Pocetna : Page
     {
         Bazen b;
+
         public Pocetna()
         {
             this.InitializeComponent();
@@ -36,7 +37,8 @@ namespace DelfinBazen.XamlFileovi
             b = new Bazen();
             b = bazen;
         }
-
+        
+        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Page stranica = new Prijava(ref b);
@@ -59,6 +61,11 @@ namespace DelfinBazen.XamlFileovi
         {
             Page stranica = new Prijava(ref b);
             this.Content = stranica;
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
