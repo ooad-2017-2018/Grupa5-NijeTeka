@@ -10,6 +10,8 @@ namespace DelfinASP.NET.Models
     {
         [ScaffoldColumn(false)]
         public int upraviteljID { get; set; }
+
+        public Upravitelj() { }
         public Upravitelj(string ime, string prezime, DateTime datumRodjenja, double plata) : base(ime, prezime, datumRodjenja, plata, "upravitelj", "upravitelj") { }
     }
 }

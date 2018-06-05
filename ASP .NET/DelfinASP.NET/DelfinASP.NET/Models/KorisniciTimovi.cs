@@ -22,6 +22,8 @@ namespace DelfinASP.NET.Models
         protected string lozinka;
         [ScaffoldColumn(false)]
         public int KorisniciTimoviID{get;set;}
+
+        public KorisniciTimovi() { }
         public KorisniciTimovi(string imeTima, string imeTrenera, int brojClanova,DateTime datum, string korisnickoIme, string lozinka)
         {
             ImeTima = imeTima;

@@ -200,6 +200,10 @@
     <Compile Include="Controllers\KorisniciPojedincisController.cs" />
     <Compile Include="Controllers\KorisniciTimovisController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RadnikSpasController.cs" />
+    <Compile Include="Controllers\RecepcionarsController.cs" />
+    <Compile Include="Controllers\UpraviteljsController.cs" />
+    <Compile Include="Controllers\ZastitarsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -290,6 +294,26 @@
     <Content Include="Views\KorisniciTimovis\Details.cshtml" />
     <Content Include="Views\KorisniciTimovis\Edit.cshtml" />
     <Content Include="Views\KorisniciTimovis\Index.cshtml" />
+    <Content Include="Views\Upraviteljs\Create.cshtml" />
+    <Content Include="Views\Upraviteljs\Delete.cshtml" />
+    <Content Include="Views\Upraviteljs\Details.cshtml" />
+    <Content Include="Views\Upraviteljs\Edit.cshtml" />
+    <Content Include="Views\Upraviteljs\Index.cshtml" />
+    <Content Include="Views\Recepcionars\Create.cshtml" />
+    <Content Include="Views\Recepcionars\Delete.cshtml" />
+    <Content Include="Views\Recepcionars\Details.cshtml" />
+    <Content Include="Views\Recepcionars\Edit.cshtml" />
+    <Content Include="Views\Recepcionars\Index.cshtml" />
+    <Content Include="Views\RadnikSpas\Create.cshtml" />
+    <Content Include="Views\RadnikSpas\Delete.cshtml" />
+    <Content Include="Views\RadnikSpas\Details.cshtml" />
+    <Content Include="Views\RadnikSpas\Edit.cshtml" />
+    <Content Include="Views\RadnikSpas\Index.cshtml" />
+    <Content Include="Views\Zastitars\Create.cshtml" />
+    <Content Include="Views\Zastitars\Delete.cshtml" />
+    <Content Include="Views\Zastitars\Details.cshtml" />
+    <Content Include="Views\Zastitars\Edit.cshtml" />
+    <Content Include="Views\Zastitars\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
