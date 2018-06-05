@@ -197,10 +197,13 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KorisniciPojedincisController.cs" />
+    <Compile Include="Controllers\KorisniciTimovisController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\DelfinBazen.cs" />
     <Compile Include="Models\DelfinContext.cs" />
@@ -277,6 +280,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\KorisniciPojedincis\Create.cshtml" />
+    <Content Include="Views\KorisniciPojedincis\Delete.cshtml" />
+    <Content Include="Views\KorisniciPojedincis\Details.cshtml" />
+    <Content Include="Views\KorisniciPojedincis\Edit.cshtml" />
+    <Content Include="Views\KorisniciPojedincis\Index.cshtml" />
+    <Content Include="Views\KorisniciTimovis\Create.cshtml" />
+    <Content Include="Views\KorisniciTimovis\Delete.cshtml" />
+    <Content Include="Views\KorisniciTimovis\Details.cshtml" />
+    <Content Include="Views\KorisniciTimovis\Edit.cshtml" />
+    <Content Include="Views\KorisniciTimovis\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

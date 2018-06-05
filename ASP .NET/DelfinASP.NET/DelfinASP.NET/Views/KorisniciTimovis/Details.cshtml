@@ -1,0 +1,66 @@
+﻿@model DelfinASP.NET.Models.KorisniciTimovi
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>KorisniciTimovi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ImeTima)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImeTima)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImeTrenera)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImeTrenera)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojClanova)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojClanova)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumOsnivanja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumOsnivanja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KorisnickoIme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KorisnickoIme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lozinka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lozinka)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.KorisniciTimoviID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

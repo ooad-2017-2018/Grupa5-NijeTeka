@@ -10,12 +10,18 @@ namespace DelfinASP.NET.Models
     {
         [Required]
         protected string imeTima;
+        [Required]
         protected string imeTrenera;
+        [Required]
         protected int brojClanova;
+        [Required]
         protected DateTime datumOsnivanja;
+        [Required]
         protected string korisnickoIme;
+        [Required]
         protected string lozinka;
-
+        [ScaffoldColumn(false)]
+        public int KorisniciTimoviID{get;set;}
         public KorisniciTimovi(string imeTima, string imeTrenera, int brojClanova,DateTime datum, string korisnickoIme, string lozinka)
         {
             ImeTima = imeTima;

@@ -21,7 +21,8 @@ namespace DelfinASP.NET.Models
         protected string korisnickoIme;
         [Required]
         protected string lozinka;
-
+        [ScaffoldColumn(false)]
+        public int UposlenikID;
         public Uposlenik() { }
 
         public Uposlenik(string ime, string prezime, DateTime datumRodjenja, double plata, string korisnickoIme, string lozinka)

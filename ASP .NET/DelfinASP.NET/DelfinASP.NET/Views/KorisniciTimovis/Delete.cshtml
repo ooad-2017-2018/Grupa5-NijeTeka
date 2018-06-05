@@ -1,0 +1,72 @@
+﻿@model DelfinASP.NET.Models.KorisniciTimovi
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>KorisniciTimovi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ImeTima)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImeTima)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImeTrenera)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImeTrenera)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojClanova)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojClanova)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumOsnivanja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumOsnivanja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KorisnickoIme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KorisnickoIme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lozinka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lozinka)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
