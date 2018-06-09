@@ -9,10 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="484" Margin="78,62,0,0" VerticalAlignment="Top" Width="612">
+        <Grid HorizontalAlignment="Left" Height="578" Margin="78,62,0,0" VerticalAlignment="Top" Width="612">
             <TextBlock HorizontalAlignment="Left" Margin="32,30,0,0" Text="Dobrodosli ! Odaberite opciju:" TextWrapping="Wrap" VerticalAlignment="Top" Height="90" Width="538" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
             <Button Content="Dodavanje uposlenika" HorizontalAlignment="Left" Margin="50,122,0,0" VerticalAlignment="Top" Height="88" Width="423" FontSize="22" FontStyle="Italic" Click="Button_Click"/>
-            <Button Content="Pregled evidencije uposlenika" HorizontalAlignment="Left" Margin="50,264,0,0" VerticalAlignment="Top" Height="88" Width="423" FontSize="22" FontStyle="Italic"/>
+            <Button Content="Pregled evidencije uposlenika" HorizontalAlignment="Left" Margin="50,264,0,0" VerticalAlignment="Top" Height="88" Width="423" FontSize="22" FontStyle="Italic" Click="Button_Click_1"/>
+            <Button Content="Vracanje na pocetnu" HorizontalAlignment="Left" Margin="50,406,0,0" VerticalAlignment="Top" Height="80" Width="423" FontSize="22" FontStyle="Italic" Click="Button_Click_2"/>
         </Grid>
     </Grid>
 </Page>

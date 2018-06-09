@@ -94,12 +94,7 @@ namespace DelfinBazen.View
                 PrijavaGreski.Content = "Niste popunili sva polja";
                 return false;
             }
-            /*string godina = Convert.ToString(datum.Year);
-            if (datum.Day != jmbg[0]+jmbg[1] ) //|| datum.Month!=jmbg[2]+jmbg[3] || "godina[1]"+"godina[2]"+"godina[3]"!="jmbg[4]"+"jmbg[5]"+"jmbg[6]")
-            {
-                PrijavaGreski.Content = "Neispravan unos datuma i JMB!";
-                return false;
-            }*/
+            
             return true;
         }
 

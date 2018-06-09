@@ -36,10 +36,14 @@ namespace DelfinBazen.View
             this.InitializeComponent();
             b = new Bazen();
             b = bazen;
-            
+            foreach (Uposlenik o in b.Uposlenici)
+            {
+                if (o is Uposlenik) list.Items.Add(o.ToString());
+            }
+
         }
 
-       
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

@@ -42,5 +42,17 @@ namespace DelfinBazen.View
             Page sljedeca = new DodavanjeUposlenika();
             this.Content = sljedeca;
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Page nova = new PregledEvidencije();
+            this.Content = nova;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Page nova = new Pocetna();
+            this.Content = nova;
+        }
     }
 }
