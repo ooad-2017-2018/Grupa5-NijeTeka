@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="672" Margin="80,240,0,0" VerticalAlignment="Top" Width="1288">
+        <Grid HorizontalAlignment="Center" Height="672" Margin="0,92,0,0" VerticalAlignment="Top" Width="1288">
             <TextBlock HorizontalAlignment="Left" Margin="56,48,0,0" Text="Unesite podatke:" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="354" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
             <TextBlock HorizontalAlignment="Left" Margin="56,160,0,0" Text="Unesite ime: " TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="283" FontSize="20" FontStyle="Italic"/>
             <TextBlock HorizontalAlignment="Left" Margin="56,224,0,0" Text="Unesite prezime: " TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="283" FontSize="20" FontStyle="Italic"/>

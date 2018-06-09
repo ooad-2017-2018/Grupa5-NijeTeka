@@ -9,15 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="632" Margin="168,144,0,0" VerticalAlignment="Top" Width="1152">
+        <Grid HorizontalAlignment="Left" Height="632" Margin="76,68,0,0" VerticalAlignment="Top" Width="1152">
             <TextBlock HorizontalAlignment="Left" Margin="54,50,0,0" Text="Pregled evidencije: " TextWrapping="Wrap" VerticalAlignment="Top" Height="76" Width="598" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
-            <Button Content="Nazad" HorizontalAlignment="Left" Margin="748,536,0,0" VerticalAlignment="Top" Height="46" Width="278" FontSize="20" Click="Button_Click"/>
+            <Button Content="Nazad" HorizontalAlignment="Left" Margin="732,422,0,0" VerticalAlignment="Top" Height="46" Width="278" FontSize="20" Click="Button_Click"/>
+            <ListView x:Name="Pregled" HorizontalAlignment="Left" Height="196" Margin="122,154,0,0" VerticalAlignment="Top" Width="888" SelectionChanged="ListView_SelectionChanged"/>
         </Grid>
-        <RichTextBlock x:Name="Pregled" HorizontalAlignment="Left" Height="292" Margin="252,284,0,0" VerticalAlignment="Top" Width="964" SelectionChanged="Pregled_SelectionChanged">
-            <Paragraph>
-                <Run Text="" FontFamily="Segoe UI"/>
-            </Paragraph>
-        </RichTextBlock>
 
     </Grid>
 </Page>

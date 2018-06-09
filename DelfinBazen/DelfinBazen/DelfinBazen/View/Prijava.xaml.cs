@@ -43,7 +43,16 @@ namespace DelfinBazen.View
             string ime = Ime.Text;
             string lozinka = Lozinka.Password.ToString();
             bool var = false;
-            foreach(KorisniciPojedinci kp in b.KorisniciPojedinci)
+            foreach (Uposlenik kp in b.Uposlenici)
+            {
+                if (ime == kp.KorisnickoIme && lozinka == kp.Lozinka)
+                {
+                    var = true;
+                    Page paketi = new UposlenikForma();
+                    this.Content = paketi;
+                }
+            }
+            foreach (KorisniciPojedinci kp in b.KorisniciPojedinci)
             {
                 if(ime==kp.KorisnickoIme && lozinka == kp.Lozinka)
                 {

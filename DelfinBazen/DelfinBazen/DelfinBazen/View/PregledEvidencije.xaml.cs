@@ -47,11 +47,14 @@ namespace DelfinBazen.View
             this.Content = nazad;
         }
 
-        private void Pregled_SelectionChanged(object sender, RoutedEventArgs e)
+        
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             foreach (Uposlenik u in b.Uposlenici)
             {
-                //Pregled.TextAlignment( u.Ime + " " + u.Prezime + " Datum rodjenja: " + Convert.ToString(u.DatumRodjenja) + " Iznos plate: " + Convert.ToString(u.Plata) + " \n");
+                
+                //Pregled.Text( u.Ime + " " + u.Prezime + " Datum rodjenja: " + Convert.ToString(u.DatumRodjenja) + " Iznos plate: " + Convert.ToString(u.Plata) + " \n");
             }
         }
     }
